@@ -18,9 +18,10 @@ export const ProductCard = ({ productDetails, onViewDetails }) => {
       <img
         src={image}
         alt=""
-        className="w-full h-40 object-scale-down mb-2 rounded-t "
+        className="w-full h-40 object-scale-down mb-2 rounded-t"
+        loading="lazy"
       />
-      <h2 className="text-lg font-bold line-clamp-2">{title}</h2>
+      <h2 className="text-lg font-bold line-clamp-2 px-3">{title}</h2>
 
       <div className="px-3 py-2 self-end">
         <p className="text-green-600 font-semibold">₹ {price}</p>
